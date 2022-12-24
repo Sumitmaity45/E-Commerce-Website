@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background: url(Photos/log3.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 670px;
+    font-family: sans-serif;
+}
+.loginbox{
+    width: 320px;
+    height: 435px;
+    /* background: rgb(0, 0, 0); */
+    background: rgba(183, 189, 212, 0.7);
+    color: rgb(23, 22, 22);
+    top: 62%;
+    left: 84%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 70px 30px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(15, 14, 14);
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fa801c;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    background: #ffc107;
+    color: #000;
+    cursor: pointer;
+}
+.loginbox a{
+    text-decoration: none;
+    margin-left: 55px;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(82, 75, 75);
+}
+.loginbox a:hover{
+    color: #2c07ff;
+}
+.loginbox .sign{
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(82, 75, 75);
+}
+.loginbox .sign:hover{
+    color: #2c07ff;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    margin-left: 20px;
+}
+.icons .fa:hover{
+    color: #ffc107;
+}

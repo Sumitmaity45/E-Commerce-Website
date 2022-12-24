@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background: url(Photos/reg1.gif);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 670px;
+    font-family: sans-serif;
+}
+.reginbox{
+    width: 350px;
+    height: 560px;
+    background: rgba(194, 254, 255, 0.7);
+    color: rgb(18, 17, 17);
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 70px 30px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.reginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.reginbox input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.reginbox input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="date"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 15px;
+    color: rgb(18, 17, 17);
+    font-size: 16px;
+}
+.reginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 42px;
+    background: #fa801c;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 48%;
+}
+.reginbox input[type="submit"]:hover{
+    background: #ffc107;
+    color: #000;
+    cursor: pointer;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    margin-left: 20px;
+}
+.icons .fa:hover{
+    color: #ffc107;
+}
