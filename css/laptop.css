@@ -1,0 +1,270 @@
+/* At first for Navigation Bar */
+body{
+    margin: 1;
+    padding: 1;
+    background-color: #f1f3f6;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.first{
+    border: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #194a97;
+}
+.first tr th a{
+    text-decoration: none;
+    color: white;
+}
+.first tr th a:hover{
+    color: rgb(255, 168, 7);
+    cursor: pointer;
+}
+.second{
+    border: 3px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+.second tr th{
+    width: 20%;
+}
+.second tr th a{
+    text-decoration: none;
+    color: white;
+}
+.second tr th a:hover{
+    color: rgb(255, 168, 7);
+    cursor: pointer;
+}
+
+
+
+/*.......Main Gallery.......*/
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.4s cubic-bezier(0,1.57,67,1.18);
+}
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #ccc;
+}
+.box{
+    flex:1 1 300px;
+    background: #fff;
+    border:1px solid rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.box .image{
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+.box .image img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0.7));
+}
+.box .info .title{
+    padding: 10px;
+    color: #666;
+    font-size: 20px;
+}
+.box .info .subinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1 px solid rgba(0,0,0,.3);
+}
+.box .info .subinfo .price{
+    color:green;
+    font-size: 15px;
+}
+.box .info .subinfo .price span{
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+}
+.fa-star{
+    color: orange;
+    font-size: 17px;
+
+}
+.fa-star-half-o{
+    color: orange;
+    font-size: 17px;
+}
+.box .overlay{
+    position: absolute;
+    top: 0;left: 0;
+    height: 223px;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    transform: scale(0);
+}
+.box:hover .overlay{
+    transform: scale(1);
+}
+.box .overlay a{
+    color: #666;
+    background: #fff;
+    margin: 10px;
+    padding: 13px 15px;
+    font-size: 25px;
+    transform: translateY(-150px);
+    transition-property: transform;
+    transition-delay: calc(.1s * var(--i));
+}
+.box .overlay a:hover{
+    color: gold;
+}
+.box:hover .overlay a{
+    transform: translateY(0px);
+}
+
+
+/*......product-Details........*/
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.4s cubic-bezier(0,1.57,67,1.18);
+}
+.A{
+    flex:1 1 300px;
+    background: #fff;
+    border:1px solid rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    /*margin: 20px;*/
+    height: 360px;
+    width: 100%;
+}
+.A .A-pic{
+    padding: 10px;
+    background: #fff;
+    width: 25%;
+    float: left;
+}
+.A .A-pic img{
+    height: 300px;
+    width: 270px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0.7));
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+.A-info{
+   margin-top: 10px;
+}
+.A .A-info h2{
+    font-size: 23px;
+}
+.A .A-info h3{
+    color: green;
+    font-size: 15px;
+}
+.A .A-info .A-price{
+    font-size: 20px;
+}
+.A .A-info .A-price span{
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+}
+.A .A-info .A-button input {
+    border-radius: 10px;
+}
+
+
+/* Footer section */
+footer{
+    background-color: #282828;
+    color: #aba8a8;
+    height: 340px;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+}
+.footer-widget{
+    margin: 0 35px;
+    text-align: justify;
+}
+.widget-title{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footer-widget p{
+    line-height: 20px;
+    margin: 10px 0 30px 0;
+}
+.cards i{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+}
+.footer-widget ul{
+    margin-left: 20px;
+}
+.footer-widget ul li{
+    padding-bottom: 10px;
+}
+.footer-widget ul li a{
+    color: #aba8a8;
+    text-decoration: none;
+}
+.footer-widget ul li a:hover{
+    color: rgb(255, 168, 7);
+}
+.contact-address{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9a98988c;
+    line-height: 20px;
+}
+.contact-number, .contact-mail{
+    margin: 10px 0;
+}
+.contact-address i, .contact-number i, .contact-mail i{
+    margin-right: 10px;
+}
+.social-widget a{
+    display: inline-block;
+    font-size: 20px;
+    color: #aba8a8;
+    margin-right: 15px;
+}
+.social-widget a:hover{
+    color: rgb(255, 168, 7);
+}
+.end p{
+    margin-left: 40%;
+}
+.end p i{
+    color: rgb(255, 168, 7);
+}
+
+
+
+
+
